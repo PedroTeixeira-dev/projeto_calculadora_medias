@@ -11,12 +11,9 @@ let linhas = ''
 form.addEventListener('submit', function(e){
     e.preventDefault()
 
-
-
     adicionaLinha()
     atualizaTabela()
     atualizaMediaFinal()
-
 })
 
 function adicionaLinha() {
@@ -42,7 +39,6 @@ function adicionaLinha() {
 }
     inputNomeAtividade.value = ''
     inputNotaAtividade.value = ''
-
 }
 
 function atualizaTabela() {
@@ -63,6 +59,5 @@ function calculaMediaFinal(){
     for(let i = 0; i< notas.length; i++){
     somaDasNotas += notas[i]
     }
-
     return somaDasNotas / notas.length
 }
